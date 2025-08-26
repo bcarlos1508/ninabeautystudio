@@ -1,0 +1,473 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #002e1a;
+  text-decoration: none;
+  font-family: "Antonio", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  /*Ahora 1rem=10px*/
+}
+
+a:hover {
+  color: black; 
+}
+
+header img {
+  height: 100px;
+  object-fit: contain;
+  width: 100%;
+}
+
+nav {
+  width: 85%;
+}
+
+.header {
+  background-color: #ffdbf2;
+  display: flex;
+  width: 100%;
+  font-size: 1.6rem;
+  align-items: center;
+  position: fixed;
+  z-index: 1000;
+}
+
+.navBar {
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 13rem;
+  font-size: 3.6rem;
+}
+.navBar li {
+  list-style: none;
+}
+.navBar li a {
+  text-decoration: none;
+}
+
+.relleno {
+  height: 100px;
+}
+
+.section1 {
+  background-image: url("../assets/img/inicio.jpeg");
+  height: 50vh;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.texto-encima {
+  font-family: "Montserrat", sans-serif;
+  grid-column: 1;
+  grid-row: 1;
+  padding-left: 0;
+  font-size: 6rem;
+  color: white;
+  text-align: center;
+}
+
+.carousel-item img {
+  width: 70%;
+  height: 10%;
+  border-radius: 15px;
+  margin: 2%;
+}
+
+a {
+  color: #002e1a;
+}
+
+#carouselExampleControls {
+  max-width: auto; /* ajusta el ancho máximo según sea necesario */
+  margin: auto; /* centrar horizontalmente */
+}
+
+body {
+  background-color: #ffdbf2;
+}
+
+.relleno {
+  height: 100px;
+}
+
+.section2 {
+  background-image: url("../assets/img/quienSoy.jpeg");
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.texto-encima-quien {
+  font-family: "Montserrat", sans-serif;
+  grid-column: 0.25;
+  grid-row: 4;
+  padding-left: 0;
+  font-size: 8rem;
+  color: white;
+  text-align: center;
+}
+
+.texto-encima-quien-2 {
+  font-family: "Montserrat", sans-serif;
+  grid-column: 0.25;
+  grid-row: 4;
+  padding-left: 1rem;
+  font-size: 4rem;
+  color: white;
+  text-align: left;
+}
+
+.textoQuienSoy {
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 1rem;
+  margin: 5rem;
+  color: black;
+}
+
+.section3 {
+  background-image: url("../assets/img/servicios.jpeg");
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.texto-encima-serv {
+  font-family: "Montserrat", sans-serif;
+  grid-column: 6;
+  grid-row: 1;
+  padding-left: 0;
+  font-size: 8rem;
+  color: white;
+  text-align: center;
+}
+
+.texto-encima-serv-2 {
+  font-family: "Montserrat", sans-serif;
+  grid-column: 0.3333333333;
+  grid-row: 3;
+  padding-left: 2rem;
+  font-size: 3rem;
+  color: white;
+  text-align: left;
+}
+
+.serviciosDer {
+  display: flex;
+  text-align: left;
+  align-items: center;
+  font-size: 35px;
+  margin: 4%;
+  border-style: solid;
+  border-color: black;
+  padding-right: 7%;
+}
+.serviciosDer ul li {
+  list-style: none;
+}
+
+.imgSerDer {
+  width: 30rem;
+  height: 30rem;
+  border-radius: 200px;
+  margin: 2%;
+}
+
+.serviciosIzq {
+  display: flex;
+  text-align: left;
+  align-items: center;
+  font-size: 35px;
+  margin: 4%;
+  border-style: solid;
+  border-color: black;
+  padding-left: 7%;
+}
+.serviciosIzq ul li {
+  list-style: none;
+}
+
+.imgSerIzq {
+  width: 30rem;
+  height: 30rem;
+  border-radius: 200px;
+  margin: 2%;
+}
+
+.section6 {
+  background-image: url("../assets/img/cursos.jpeg");
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.texto-encima-cursos {
+  font-family: "Montserrat", sans-serif;
+  grid-column: 6;
+  grid-row: 1;
+  padding-left: 0;
+  font-size: 8rem;
+  color: white;
+  text-align: center;
+}
+
+.texto-encima-cursos-2 {
+  font-family: "Montserrat", sans-serif;
+  grid-column: 1;
+  grid-row: 4;
+  padding-left: 1rem;
+  font-size: 3rem;
+  color: white;
+  text-align: left;
+}
+
+.section4 {
+  background-image: url("../assets/img/trabajosRealizados.jpeg");
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.texto-encima-trabajos {
+  font-family: "Montserrat", sans-serif;
+  grid-column: 3;
+  grid-row: 1;
+  padding-left: 0;
+  font-size: 8rem;
+  color: white;
+  text-align: right;
+  padding-right: 2rem;
+}
+
+.texto-encima-trabajos-2 {
+  font-family: "Montserrat", sans-serif;
+  grid-column: 1;
+  grid-row: 4;
+  padding-left: 2rem;
+  font-size: 4rem;
+  color: white;
+  text-align: left;
+}
+
+.galeria img {
+  width: 30%;
+  height: 100%;
+  border-radius: 15px;
+  margin: 1%;
+}
+
+.section5 {
+  background-image: url("../assets/img/contacto.jpeg");
+  height: 50vh;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.texto-encima-contacto {
+  font-family: "Montserrat", sans-serif;
+  grid-column: 0.5;
+  grid-row: 1;
+  padding-left: 2rem;
+  font-size: 8rem;
+  color: white;
+  text-align: right;
+}
+
+.contacto {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  font-size: 3.5em;
+  margin: 15px auto;
+}
+
+.maps {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.contactame {
+  text-align: center;
+  width: 100%;
+  font-size: 1.5em;
+  margin: 90px auto;
+}
+
+.texto {
+  font-size: 1.2em;
+}
+
+footer {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: #ffdbf2;
+}
+
+.rrss {
+  color: black;
+}
+
+
+input:invalid, textarea:invalid {
+  border: 2px solid red;
+}
+
+input:valid, textarea:valid {
+  border: 2px solid green;
+}
+
+#errores p {
+  font-size: 1.4rem;
+  margin: 0.5rem 0;
+}
+
+.contacto-container {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.contacto-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  gap: 2rem;
+  align-items: center;
+}
+
+.contacto-info, .contacto-form {
+  flex: 1;
+  background-color: #fff0fa;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.contacto-info h2, .contacto-form h2 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.contacto-info a {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 3.6rem;
+  color: #002e1a;
+}
+
+.contacto-form form label {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.contacto-form input, .contacto-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contacto-form button {
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  background-color: #ffb3d9;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.maps {
+  width: 500px;
+  height: 500px;
+  border: none;
+  margin-top: 1rem;
+}
+
+.carrito-navbar {
+  position: relative;
+  margin-left: 2rem;
+  font-size: 3rem;
+}
+
+#carrito-cantidad {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 0.2rem 0.6rem;
+  font-size: 1.4rem;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+
+.add-to-cart {
+  background-color: #004225;      /* verde inglés */
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+}
+
+.add-to-cart:hover {
+  background-color: #c2185b;      /* tono más oscuro al pasar */
+  transform: translateY(-2px);    /* efecto "levanta" */
+  box-shadow: 0px 6px 12px rgba(0,0,0,0.3);
+}
+
+.add-to-cart:active {
+  transform: scale(0.95);         /* efecto "clic" */
+}
+
+.serviciosIzq ul {
+  margin-left: 120px;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+	<link rel="stylesheet" href="../css/style.css">
+	<script src="../js/script.js"></script>
+	<link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100&family=Dancing+Script&family=Oleo+Script&display=swap" rel="stylesheet">
+	<script src="../js/script-formulario.js" defer></script>
+</head>
+<body>
+    <!--fila de logo + nav-->
+    <header class="header">
+		<div class="logo">
+			<a href="../index.html"><img src="../assets/img/logo.png" alt="logo"></a>
+		</div>
+		<nav>
+			<ul class="navBar" id="menu">
+				<li><a href="../pages/quien-soy.html">¿Quién soy?</a></li>
+				<li><a href="../pages/servicios.html">Servicios</a></li>
+				<li><a href="../pages/trabajos.html">Trabajos Realizados</a></li>
+				<li><a href="../pages/cursos.html">Cursos</a></li>
+				<li><a href="../pages/contacto.html">Contacto</a></li>
+				<div class="carrito-navbar">
+					<a href="#" id="carrito-icon">🛒 <span id="carrito-cantidad">0</span></a>
+				</div>
+			</ul>
+		</nav>
+	</header>
+<main>
+	<div class="relleno" ></div>
+    <!-- cierre de fila logo + nav -->
+	<!-- fila de información de mi sitio -->
+	<div class="section5">
+		<div class="texto-encima-contacto">Contacto</div>
+	</div>
+	<section class="contacto">
+		<div class="contacto-container">
+			<div class="contacto-info">
+				<div>
+					<h2 class="texto">¡Contactame!</h2>
+					<a href="https://www.instagram.com/ninaofficialbeautystudio/" target="_blank">Instagram: @ninaofficialbeautystudio</a>
+					<a href="https://wa.me/5492996747111" target="_blank">WhatsApp: 2996747111</a>
+				</div>
+				<div>
+					<iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3103.4469776040255!2d-68.11731293356031!3d-38.936615939258104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a33ed23b06dc7%3A0x40b9aa4688b752b5!2sNina%20Nails!5e0!3m2!1ses-419!2sar!4v1662058205014!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>	
+			</div>
+			<div class="contacto-form">
+				<h2>Reservá tu turno</h2>
+				<form id="formularioTurno" novalidate>
+					<label>Nombre*:
+						<input type="text" id="nombre" required>
+					</label>
+					<label>Email*:
+						<input type="email" id="email" required>
+					</label>
+					<label>Fecha del turno*:
+						<input type="date" id="fecha" required>
+					</label>
+					<label>Edad:
+						<input type="number" id="edad" min="1">
+					</label>
+					<label>WhatsApp:
+						<input type="text" id="whatsapp">
+					</label>
+					<label>Comentario:
+						<textarea id="comentario"></textarea>
+					</label>
+					<button type="submit">Enviar</button>
+					<div id="errores"></div>
+				</form>
+			</div>
+		</div>
+	</section>
+	<!-- cierre de form contacto -->
+</main>
+	<!-- inicio de footer --> 
+	<footer>
+		<div id="rrss" class="rrss">
+			<svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem" fill="currentColor" class="bi bi-c-circle" viewBox="0 0 16 16">
+				<path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512Z"/>
+			</svg>
+			<script>document.write(new Date().getFullYear())</script> Nina Beauty Studio
+		</div>	
+	</footer>
+</body>
+</html>
