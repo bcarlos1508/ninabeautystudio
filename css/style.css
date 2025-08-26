@@ -75,20 +75,8 @@ nav {
   text-align: center;
 }
 
-.carousel-item img {
-  width: 70%;
-  height: 10%;
-  border-radius: 15px;
-  margin: 2%;
-}
-
 a {
   color: #002e1a;
-}
-
-#carouselExampleControls {
-  max-width: auto; /* ajusta el ancho máximo según sea necesario */
-  margin: auto; /* centrar horizontalmente */
 }
 
 body {
